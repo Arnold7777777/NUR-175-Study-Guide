@@ -1,0 +1,763 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>NUR175 Modules 11-13 Q&amp;A</title>
+<style>
+:root{
+ --amethyst:157,92,255; --sapphire:47,107,255; --emerald:18,184,134; --teal:0,194,199;
+ --topaz:255,194,51;    --ruby:255,59,107;     --garnet:192,34,85;    --citrine:255,138,61;
+ --line:rgba(255,255,255,.30);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 'Segoe UI',system-ui,sans-serif;color:#fff;
+ background-color:#140b24;background-image:url("background.jpg");
+ background-size:cover;background-position:center;background-attachment:fixed;
+ background-repeat:no-repeat}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 15px 90px}
+
+.bar{position:sticky;top:0;z-index:60;margin:0 0 12px;padding:10px 14px;
+ background:rgba(12,7,24,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+ border-bottom:1px solid var(--line)}
+.barrow{display:flex;gap:7px;align-items:center;flex-wrap:wrap;max-width:1060px;margin:0 auto}
+#q{flex:1 1 210px;min-width:160px;font-size:1rem;font-weight:600;padding:11px 15px;
+ border-radius:14px;border:1px solid var(--line);background:rgba(0,0,0,.55);color:#fff}
+#q::placeholder{color:#cbbaf0}
+.chip{background:rgba(255,255,255,.14);border:1px solid var(--line);color:#fff;
+ border-radius:16px;padding:9px 14px;font:800 .88rem 'Segoe UI',system-ui,sans-serif;
+ cursor:pointer;white-space:nowrap}
+.chip:hover{background:rgba(255,255,255,.32)}
+.chip.on{background:rgba(var(--amethyst),.95);border-color:#fff}
+#cnt{font-size:.9rem;color:#eadcff;font-weight:700}
+
+h1{font-size:1.85rem;margin:8px 0 4px;text-shadow:0 2px 18px rgba(0,0,0,.95)}
+.lede{margin:0 0 12px;color:#f4ecff;text-shadow:0 1px 14px rgba(0,0,0,.9);font-size:.97rem}
+.tabs{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 6px}
+.tabs a{display:flex;gap:7px;align-items:center;
+ background:linear-gradient(rgba(10,4,22,.68),rgba(10,4,22,.68)),rgba(var(--amethyst),.62);
+ border:1px solid rgba(255,255,255,.4);border-left:5px solid rgba(var(--amethyst),1);
+ color:#fff;text-decoration:none;border-radius:14px;padding:10px 14px;
+ font-weight:800;font-size:.92rem;text-shadow:0 2px 8px rgba(0,0,0,.9)}
+.tabs a:hover{background:linear-gradient(rgba(10,4,22,.45),rgba(10,4,22,.45)),
+ rgba(var(--amethyst),.95);border-color:#fff}
+.tabs a .n{font-size:.84rem;font-weight:800;background:rgba(0,0,0,.5);border-radius:10px;
+ padding:2px 8px}
+
+h2.sec{font-size:1.36rem;margin:28px 0 8px;padding:11px 15px;border-radius:14px;
+ background:rgba(0,0,0,.55);border:1px solid var(--line);
+ text-shadow:0 2px 12px rgba(0,0,0,.9);scroll-margin-top:96px}
+
+details.qa{background:rgba(var(--amethyst),.60);backdrop-filter:blur(7px);
+ -webkit-backdrop-filter:blur(7px);border:1px solid var(--line);
+ border-left:5px solid rgba(255,255,255,.55);border-radius:16px;margin:10px 0;
+ box-shadow:0 8px 26px rgba(0,0,0,.5);overflow:hidden}
+details.qa.ruby{background:rgba(var(--ruby),.60)} details.qa.emerald{background:rgba(var(--emerald),.60)}
+details.qa.sapphire{background:rgba(var(--sapphire),.60)} details.qa.teal{background:rgba(var(--teal),.60)}
+details.qa.garnet{background:rgba(var(--garnet),.60)} details.qa.citrine{background:rgba(var(--citrine),.60)}
+details.qa.amethyst{background:rgba(var(--amethyst),.60)}
+details.qa.topaz{background:rgba(var(--topaz),.64);color:#241a02}
+details.qa.topaz .ansbox{background:rgba(255,255,255,.4);color:#241a02}
+details.qa>summary{list-style:none;cursor:pointer;padding:15px 17px;font-weight:800;
+ font-size:1.04rem;line-height:1.42;display:flex;gap:10px;align-items:flex-start}
+details.qa>summary::-webkit-details-marker{display:none}
+details.qa>summary::before{content:'?';flex:0 0 auto;width:26px;height:26px;border-radius:50%;
+ background:rgba(0,0,0,.48);display:flex;align-items:center;justify-content:center;
+ font-weight:900;font-size:1rem;margin-top:1px}
+details.qa[open]>summary::before{content:'\2713';background:rgba(255,255,255,.34)}
+details.qa>summary:hover{background:rgba(255,255,255,.10)}
+details.qa .qt{white-space:pre-line}
+.ansbox{margin:0;padding:2px 17px 15px;background:rgba(0,0,0,.30)}
+.ansbox p{margin:7px 0;font-size:1rem;line-height:1.5;white-space:pre-line}
+.ansbox ul{margin:6px 0;padding-left:22px}
+.ansbox li{margin:4px 0;font-size:1rem;line-height:1.45}
+.ansbox table{width:100%;min-width:400px;border-collapse:collapse;margin:9px 0;font-size:.96rem}
+.ansbox th,.ansbox td{border:1px solid rgba(255,255,255,.4);padding:8px 10px;
+ text-align:left;vertical-align:top}
+.ansbox th{background:rgba(0,0,0,.4);font-weight:900}
+.tblwrap{overflow-x:auto;max-width:100%;scrollbar-width:thin}
+.tblwrap::-webkit-scrollbar{height:11px}
+.tblwrap::-webkit-scrollbar-thumb{background:rgba(255,255,255,.45);border-radius:8px}
+
+#none{display:none;padding:20px;font-weight:800;font-size:1.02rem}
+.foot{margin:26px 0 0;font-size:.88rem;color:#eadcff;text-shadow:0 1px 10px rgba(0,0,0,.9)}
+
+#navBtns{position:fixed;top:10px;right:12px;z-index:2147483000;display:flex;gap:7px;align-items:center}
+#navBtns a{background:linear-gradient(135deg,#5a2d82,#8e2d6b);color:#fff;text-decoration:none;
+ border:1px solid rgba(255,255,255,.42);border-radius:20px;padding:9px 13px;font-weight:800;
+ font-size:.9rem;box-shadow:0 4px 14px rgba(0,0,0,.6)}
+#navBtns a.hb{background:linear-gradient(135deg,#0f7d6b,#12b886)}
+#navBtns a:hover{filter:brightness(1.15)}
+@media(max-width:1050px){#navBtns .lb{display:none}}
+@media(max-width:1180px){h1{padding-right:200px}}
+@media(max-width:1050px){h1{padding-right:130px}}
+@media(max-width:560px){h1{padding-right:0;margin-top:54px;font-size:1.34rem}}
+@media print{.bar,#navBtns,.tabs{display:none}details.qa{break-inside:avoid}
+ details.qa .ansbox{display:block !important}}
+</style></head><body>
+<div id="navBtns">
+  <a class="hb" href="https://arnold7777777.github.io/NUR-175-Study-Guide/">&#127968;<span class="lb"> NUR 175</span></a>
+  <a href="https://arnold7777777.github.io/ABSN-Study-Hub/">&#127891;<span class="lb"> Hub</span></a>
+  
+</div>
+<div class="wrap">
+<h1>&#10067; Modules 11&ndash;13 &mdash; your own questions</h1>
+<p class="lede">All <b>99</b> of your review questions for modules 11&ndash;13, grouped into <b>7</b> topics: somatic disorders, autism, ADHD, tics, communication disorders, disruptive behaviour, delirium and dementia. Tap a question to check yourself.</p>
+<div class="tabs"><a href="#somatic-symptom-related-disorders">🩻 Somatic symptom &amp; related disorders<span class="n">29</span></a><a href="#autism-intellectual-disability">🧩 Autism &amp; intellectual disability<span class="n">11</span></a><a href="#adhd">⚡ ADHD<span class="n">12</span></a><a href="#tics-tourette-syndrome">😬 Tics &amp; Tourette syndrome<span class="n">8</span></a><a href="#learning-communication-disorders">🗣️ Learning &amp; communication disorders<span class="n">17</span></a><a href="#disruptive-behavior-disorders">💢 Disruptive behavior disorders<span class="n">13</span></a><a href="#delirium-dementia">🧠 Delirium &amp; dementia<span class="n">9</span></a></div>
+<div class="bar"><div class="barrow"><input id="q" type="search" placeholder="Search these questions&hellip;" autocomplete="off"><button type="button" class="chip" id="openAll">Show all answers</button><button type="button" class="chip on" id="closeAll">Hide all answers</button><span id="cnt"></span></div></div>
+<h2 class="sec" id="somatic-symptom-related-disorders">🩻 Somatic symptom &amp; related disorders</h2>
+<details class="qa amethyst" data-kw="patient suddenly cannot move legs after traumatic event. mri normal. what are the nurse&#x27;s priority actions? assess safety
+provide emotional support
+do not accuse patient of pretending &quot;&quot;"><summary><span class="qt">Patient suddenly cannot move legs after traumatic event. MRI normal. What are the nurse&#x27;s priority actions?</span></summary><div class="ansbox"><p>Assess safety</p>
+<p>Provide emotional support</p>
+<p>Do NOT accuse patient of pretending</p></div></details>
+<details class="qa amethyst" data-kw="when someone has symptoms that are due to mental unwellness but manifest as physical symptoms, what is this called? those are somatic symptoms &quot;&quot;"><summary><span class="qt">When someone has symptoms that are due to mental unwellness but manifest as physical symptoms, what is this called?</span></summary><div class="ansbox"><p>Those are somatic symptoms</p></div></details>
+<details class="qa amethyst" data-kw="t/f: somatic symptom disorders involve real physical symptoms that cannot be fully explained by a medical condition. true
+real to the patient
+not intentionally produced
+not &quot;faking it&quot; &quot;&quot;"><summary><span class="qt">T/F: Somatic symptom disorders involve real physical symptoms that cannot be fully explained by a medical condition.</span></summary><div class="ansbox"><p>True</p>
+<p>Real to the patient</p>
+<p>Not intentionally produced</p>
+<p>Not &quot;faking it&quot;</p></div></details>
+<details class="qa amethyst" data-kw="a patient with multiple physical complaints, excessive anxiety about symptoms, and significant disruption in life may be diagnosed with? somatic symptom disorder
+ex: abdominal pain, fatigue, headaches, nausea &quot;&quot;"><summary><span class="qt">A patient with multiple physical complaints, excessive anxiety about symptoms, and significant disruption in life may be diagnosed with?</span></summary><div class="ansbox"><p>Somatic Symptom Disorder</p>
+<p>Ex: abdominal pain, fatigue, headaches, nausea</p></div></details>
+<details class="qa amethyst" data-kw="what are the nursing priorities with somatic symptom disorder? never tell the patient, &quot;nothing is wrong.&quot; instead, use &quot;i understand that your pain is real.&quot; &quot;&quot;"><summary><span class="qt">What are the nursing priorities with somatic symptom disorder?</span></summary><div class="ansbox"><p>Never tell the patient, &quot;nothing is wrong.&quot; Instead, use &quot;I understand that your pain is real.&quot;</p></div></details>
+<details class="qa amethyst" data-kw="a patient has minimal or no symptoms, but constant fear of serious illness. it is called… illness anxiety disorder
+example: &quot;my headache means i have a brain tumor.&quot;
+clue: patient repeatedly seeks reassurance but never feels reassured. &quot;&quot;"><summary><span class="qt">A patient has minimal or no symptoms, BUT constant fear of serious illness. It is called…</span></summary><div class="ansbox"><p>Illness Anxiety Disorder</p>
+<p>Example: &quot;My headache means I have a brain tumor.&quot;</p>
+<p>Clue: Patient repeatedly seeks reassurance but never feels reassured.</p></div></details>
+<details class="qa amethyst" data-kw="when psychological stress becomes a neurologic symptom, a patient may be diagnosed with… conversion disorder
+examples:
+sudden blindness, paralysis, inability to speak, seizures, numbness
+no neurological explanation exists. &quot;&quot;"><summary><span class="qt">When psychological stress becomes a neurologic symptom, a patient may be diagnosed with…</span></summary><div class="ansbox"><p>Conversion Disorder</p>
+<p>Examples:</p>
+<p>Sudden blindness, paralysis, inability to speak, seizures, numbness</p>
+<p>No neurological explanation exists.</p></div></details>
+<details class="qa amethyst" data-kw="what is la belle indifference? it&#x27;s a common finding with conversion disorders. it is when the patient seems strangely unconcerned about severe symptoms.
+example: patient becomes blind…but calmly asks:
+&quot;so when can i go home?&quot; &quot;&quot;"><summary><span class="qt">What is la belle indifference?</span></summary><div class="ansbox"><p>It&#x27;s a common finding with Conversion Disorders. It is when the patient seems strangely unconcerned about severe symptoms.</p>
+<p>Example: Patient becomes blind…but calmly asks:</p>
+<p>&quot;So when can I go home?&quot;</p></div></details>
+<details class="qa amethyst" data-kw="a patient experiences pain that results in disability, emotional distress, and impaired function but there is no adequate medical explanation. this is called… pain disorder
+often labeled as &quot;idiopathic pain&quot; or pain with an unidentified source. &quot;&quot;"><summary><span class="qt">A patient experiences pain that results in disability, emotional distress, and impaired function but there is no adequate medical explanation. This is called…</span></summary><div class="ansbox"><p>Pain disorder</p>
+<p>Often labeled as &quot;idiopathic pain&quot; or pain with an unidentified source.</p></div></details>
+<details class="qa amethyst" data-kw="when a patient intentionally creates a disease, what is this called and what is their motivation? factitious disorder
+goal:
+- become a patient (gain sympathy)
+- receive attention
+- no external reward
+example: injects bacteria into iv site. alters lab specimens. &quot;&quot;"><summary><span class="qt">When a patient intentionally creates a disease, what is this called and what is their motivation?</span></summary><div class="ansbox"><p>Factitious disorder</p>
+<p>Goal:</p>
+<ul><li>Become a patient (gain sympathy)</li><li>Receive attention</li><li>No external reward</li></ul>
+<p>Example: Injects bacteria into IV site. Alters lab specimens.</p></div></details>
+<details class="qa amethyst" data-kw="when a person intentionally harms or maintains the disability of a family member/close associate to gain attention, it is called what? munchausen by proxy (type of factitious disorder)
+often a mom to child. &quot;&quot;"><summary><span class="qt">When a person intentionally harms or maintains the disability of a family member/close associate to gain attention, it is called what?</span></summary><div class="ansbox"><p>Munchausen by proxy (type of factitious disorder)</p>
+<p>Often a mom to child.</p></div></details>
+<details class="qa amethyst" data-kw="what is malingering and how is it different than a factitious disorder? it&#x27;s the production of intentional symptoms for external gain.
+external gains could include: avoiding jail, getting disability, avoiding military service, obtaining narcotics.
+if there is an obvious external reward = malingering &quot;&quot;"><summary><span class="qt">What is malingering and how is it different than a factitious disorder?</span></summary><div class="ansbox"><p>It&#x27;s the production of intentional symptoms for EXTERNAL GAIN.</p>
+<p>External gains could include: avoiding jail, getting disability, avoiding military service, obtaining narcotics.</p>
+<p>If there is an obvious external reward = malingering</p></div></details>
+<details class="qa amethyst" data-kw="which two disorders are caused by intentional symptoms? factitious disorder and malingering &quot;&quot;"><summary><span class="qt">Which two disorders are caused by intentional symptoms?</span></summary><div class="ansbox"><p>Factitious disorder and malingering</p></div></details>
+<details class="qa amethyst" data-kw="what is primary gain as it relates to somatic disorders? primary gain is the internal psychological relief a person receives from developing symptoms. the symptoms reduce emotional conflict or anxiety without the person consciously intending them.
+primary = psychological relief
+this is seen in somatic symptom d/o, illness anxiety d/o, and conversion d/o. &quot;&quot;"><summary><span class="qt">What is primary gain as it relates to somatic disorders?</span></summary><div class="ansbox"><p>Primary gain is the internal psychological relief a person receives from developing symptoms. The symptoms reduce emotional conflict or anxiety without the person consciously intending them.</p>
+<p>Primary = Psychological relief</p>
+<p>This is seen in Somatic Symptom D/O, Illness Anxiety D/O, and Conversion D/O.</p></div></details>
+<details class="qa amethyst" data-kw="what is secondary gain as it relates to somatic disorders? secondary gain is any external benefit that occurs because the illness exists.
+think: secondary = outside reward
+&quot;other people treat me differently because i&#x27;m sick.&quot;
+examples: attention, sympathy, financial help, avoiding work, avoiding responsibilities
+the person is not intentionally creating symptoms to receive these benefits. &quot;&quot;"><summary><span class="qt">What is secondary gain as it relates to somatic disorders?</span></summary><div class="ansbox"><p>Secondary gain is any external benefit that occurs because the illness exists.</p>
+<p>Think: Secondary = Outside reward</p>
+<p>&quot;Other people treat me differently because I&#x27;m sick.&quot;</p>
+<p>Examples: attention, sympathy, financial help, avoiding work, avoiding responsibilities</p>
+<p>The person is not intentionally creating symptoms to receive these benefits.</p></div></details>
+<details class="qa amethyst" data-kw="in this scenario what type of relief is gained, secondary or primary?
+a nursing student is overwhelmed by clinicals. the morning of clinical, she suddenly cannot move her legs. medical tests are normal. her unconscious mind converts emotional stress into paralysis.
+the paralysis removes the anxiety of going to clinical.
+that relief is primary gain. &quot;&quot;"><summary><span class="qt">In this scenario what type of relief is gained, secondary or primary?
+A nursing student is overwhelmed by clinicals. The morning of clinical, she suddenly cannot move her legs. Medical tests are normal.</span></summary><div class="ansbox"><p>Her unconscious mind converts emotional stress into paralysis.</p>
+<p>The paralysis removes the anxiety of going to clinical.</p>
+<p>That relief is primary gain.</p></div></details>
+<details class="qa amethyst" data-kw="in this scenario what type of relief is gained, secondary or primary?
+because marge constantly talks about stomach pain, her husband spends more time with her, takes care of her, and comforts her. these are secondary gains.
+she didn&#x27;t purposely invent symptoms to obtain them.
+&quot;other people treat me differently because i&#x27;m sick.&quot; &quot;&quot;"><summary><span class="qt">In this scenario what type of relief is gained, secondary or primary?
+Because Marge constantly talks about stomach pain, her husband spends more time with her, takes care of her, and comforts her.</span></summary><div class="ansbox"><p>These are secondary gains.</p>
+<p>She didn&#x27;t purposely invent symptoms to obtain them.</p>
+<p>&quot;Other people treat me differently because I&#x27;m sick.&quot;</p></div></details>
+<details class="qa amethyst" data-kw="if a patient injects feces into an iv what type of disorder may they have? factitious disorder
+symptoms are intentional. the person knows they are making themselves sick. &quot;i want to be sick.&quot;
+why? not for money. not to avoid work.
+they simply want to be cared for &amp; be the patient.
+this is not primary gain b/c that requires unconscious symptom formation. &quot;&quot;"><summary><span class="qt">If a patient injects feces into an IV what type of disorder may they have?</span></summary><div class="ansbox"><p>Factitious disorder</p>
+<p>Symptoms are intentional. The person knows they are making themselves sick. &quot;I WANT to be sick.&quot;</p>
+<p>Why? Not for money. Not to avoid work.</p>
+<p>They simply want to be cared for &amp; be the patient.</p>
+<p>This is NOT Primary Gain b/c that requires unconscious symptom formation.</p></div></details>
+<details class="qa amethyst" data-kw="a prisoner pretends to have seizures to get transferred to the hospital. what is this called? malingering
+not primary or secondary gain b/c symptoms are intentional.
+&quot;i want something.&quot; &quot;&quot;"><summary><span class="qt">A prisoner pretends to have seizures to get transferred to the hospital. What is this called?</span></summary><div class="ansbox"><p>Malingering</p>
+<p>Not primary or secondary gain b/c symptoms are intentional.</p>
+<p>&quot;I WANT something.&quot;</p></div></details>
+<details class="qa amethyst" data-kw="what are nursing priorities for pain disorders? never argue.
+never challenge symptoms.
+never reinforce illness behavior.
+instead:
+✓ acknowledge symptoms
+✓ encourage independence
+✓ teach coping
+✓ encourage expression of feelings
+good: &quot;i believe you&#x27;re experiencing pain.&quot; &quot;i&#x27;d like to help you find ways to manage stress.&quot; &quot;&quot;"><summary><span class="qt">What are nursing priorities for pain disorders?</span></summary><div class="ansbox"><p>Never argue.</p>
+<p>Never challenge symptoms.</p>
+<p>Never reinforce illness behavior.</p>
+<p>Instead:</p>
+<ul><li>Acknowledge symptoms</li><li>Encourage independence</li><li>Teach coping</li><li>Encourage expression of feelings</li></ul>
+<p>Good: &quot;I believe you&#x27;re experiencing pain.&quot; &quot;I&#x27;d like to help you find ways to manage stress.&quot;</p></div></details>
+<details class="qa amethyst" data-kw="what are key nursing interventions for these types of disorders? ✔ schedule regular short visits
+✔ focus on functioning—not symptoms
+✔ encourage journaling
+✔ encourage identification of stressors
+✔ promote exercise
+✔ healthy sleep
+✔ relaxation
+✔ cbt &quot;&quot;"><summary><span class="qt">What are key nursing interventions for these types of disorders?</span></summary><div class="ansbox"><ul><li>Schedule regular short visits</li><li>Focus on functioning—not symptoms</li><li>Encourage journaling</li><li>Encourage identification of stressors</li><li>Promote exercise</li><li>Healthy sleep</li><li>Relaxation</li><li>CBT</li></ul></div></details>
+<details class="qa amethyst" data-kw="what meds can cure somatic disorders? trick question - none
+treat associated anxiety or depression - usually ssris
+fluoxetine, sertraline, paroxetine, escitalopram &quot;&quot;"><summary><span class="qt">What meds can cure somatic disorders?</span></summary><div class="ansbox"><p>Trick question - NONE</p>
+<p>Treat associated anxiety or depression - usually SSRIs</p>
+<p>Fluoxetine, sertraline, paroxetine, escitalopram</p></div></details>
+<details class="qa amethyst" data-kw="what are the most important things to remember regarding managing patients with somatic disorders? rule out real illness first.
+never assume symptoms are psychiatric.
+always complete appropriate medical evaluation.
+
+treatment is more focused on teaching them how to better manage those symptoms so that they can live an improved quality of life. not &quot;curing&quot; them. &quot;&quot;"><summary><span class="qt">What are the most important things to remember regarding managing patients with somatic disorders?</span></summary><div class="ansbox"><p>Rule out real illness FIRST.</p>
+<p>Never assume symptoms are psychiatric.</p>
+<p>Always complete appropriate medical evaluation.</p>
+<p>Treatment is more focused on teaching them how to better manage those symptoms so that they can live an improved quality of life. Not &quot;curing&quot; them.</p></div></details>
+<details class="qa amethyst" data-kw="what is the hallmark of somatic symptom disorder? physical symptoms are real to the patient but lack sufficient medical explanation. &quot;&quot;"><summary><span class="qt">What is the hallmark of somatic symptom disorder?</span></summary><div class="ansbox"><p>Physical symptoms are real to the patient but lack sufficient medical explanation.</p></div></details>
+<details class="qa amethyst" data-kw="what disorder involves fear of illness despite minimal symptoms? illness anxiety disorder. &quot;&quot;"><summary><span class="qt">What disorder involves fear of illness despite minimal symptoms?</span></summary><div class="ansbox"><p>Illness anxiety disorder.</p></div></details>
+<details class="qa amethyst" data-kw="lack of concern about serious neurologic symptoms is called… la belle indifférence &quot;&quot;"><summary><span class="qt">Lack of concern about serious neurologic symptoms is called…</span></summary><div class="ansbox"><p>la belle indifférence</p></div></details>
+<details class="qa amethyst" data-kw="best therapy for somatic symptom disorders? cbt &quot;&quot;"><summary><span class="qt">Best therapy for somatic symptom disorders?</span></summary><div class="ansbox"><p>CBT</p></div></details>
+<details class="qa amethyst" data-kw="a 45-year-old male with a history of somatic symptom disorder presents to the ed with chest pain, shortness of breath, and dizziness. vitals stable, ecg and chest x-ray normal. he continues to report severe distress. a key element in managing this patient&#x27;s condition is:
+a) providing immediate pain relief to prevent further distress.
+b) reassuring the patient that there is no physical cause for his symptoms.
+c) encouraging the patient to focus on psychological counseling and ignore his physical complaints.
+d) acknowledging the patient&#x27;s symptoms as real and offering support for their distress while addressing underlying psychological factors. d) acknowledging the patient&#x27;s symptoms as real and offering support for their distress while addressing underlying psychological factors. &quot;&quot;"><summary><span class="qt">A 45-year-old male with a history of somatic symptom disorder presents to the ED with chest pain, shortness of breath, and dizziness. Vitals stable, ECG and chest X-ray normal. He continues to report severe distress. A key element in managing this patient&#x27;s condition is:
+A) Providing immediate pain relief to prevent further distress.
+B) Reassuring the patient that there is no physical cause for his symptoms.
+C) Encouraging the patient to focus on psychological counseling and ignore his physical complaints.
+D) Acknowledging the patient&#x27;s symptoms as real and offering support for their distress while addressing underlying psychological factors.</span></summary><div class="ansbox"><p>D) Acknowledging the patient&#x27;s symptoms as real and offering support for their distress while addressing underlying psychological factors.</p></div></details>
+<details class="qa amethyst" data-kw="a 32-year-old woman with somatic symptom disorder is admitted for persistent nonspecific gi symptoms. which statement by the patient indicates a need for further education?
+a. &quot;i understand that my symptoms are real, even though the doctors haven&#x27;t found anything physically wrong with me.&quot;
+b. &quot;i know that managing my stress may help reduce my symptoms.&quot;
+c. &quot;i should expect my symptoms to go away once the doctors find the cause.&quot;
+d. &quot;i may benefit from therapy to help me cope with my symptoms.&quot; c. &quot;i should expect my symptoms to go away once the doctors find the cause.&quot;
+because simply knowing what the problem is isn&#x27;t going to make them go away. need to work on the trigger behind the somatic response. &quot;&quot;"><summary><span class="qt">A 32-year-old woman with somatic symptom disorder is admitted for persistent nonspecific GI symptoms. Which statement by the patient indicates a need for further education?
+A. &quot;I understand that my symptoms are real, even though the doctors haven&#x27;t found anything physically wrong with me.&quot;
+B. &quot;I know that managing my stress may help reduce my symptoms.&quot;
+C. &quot;I should expect my symptoms to go away once the doctors find the cause.&quot;
+D. &quot;I may benefit from therapy to help me cope with my symptoms.&quot;</span></summary><div class="ansbox"><p>C. &quot;I should expect my symptoms to go away once the doctors find the cause.&quot;</p>
+<p>Because simply knowing what the problem is isn&#x27;t going to make them go away. Need to work on the trigger behind the somatic response.</p></div></details>
+<h2 class="sec" id="autism-intellectual-disability">🧩 Autism &amp; intellectual disability</h2>
+<details class="qa sapphire" data-kw="what traits describe a person who is intellectually disabled? a person with an iq &lt; 70, family genetic history of tay-sachs, and significant limitations in areas of adaptive functioning, such as communication skills, the ability to care for themselves, life skills, and interpersonal skills. &quot;&quot;"><summary><span class="qt">What traits describe a person who is intellectually disabled?</span></summary><div class="ansbox"><p>A person with an IQ &lt; 70, family genetic history of Tay-Sachs, and significant limitations in areas of adaptive functioning, such as communication skills, the ability to care for themselves, life skills, and interpersonal skills.</p></div></details>
+<details class="qa sapphire" data-kw="what are key characteristics of autism spectrum disorder? impaired: social interaction, communication
+restricted interests
+repetitive behaviors &quot;&quot;"><summary><span class="qt">What are key characteristics of Autism Spectrum Disorder?</span></summary><div class="ansbox"><p>Impaired: Social interaction, Communication</p>
+<p>Restricted interests</p>
+<p>Repetitive behaviors</p></div></details>
+<details class="qa sapphire" data-kw="what are early signs of autism spectrum disorder? usually before age 3
+poor eye contact
+no pretend play
+no pointing
+delayed speech
+little interest in peers
+doesn&#x27;t respond to own name
+repetitive movements: rocking, hand flapping, toe walking &quot;&quot;"><summary><span class="qt">What are early signs of Autism Spectrum Disorder?</span></summary><div class="ansbox"><p>Usually before age 3</p>
+<p>Poor eye contact</p>
+<p>No pretend play</p>
+<p>No pointing</p>
+<p>Delayed speech</p>
+<p>Little interest in peers</p>
+<p>Doesn&#x27;t respond to own name</p>
+<p>Repetitive movements: rocking, hand flapping, toe walking</p></div></details>
+<details class="qa sapphire" data-kw="at what age do autism symptoms usually appear? before age 3 &quot;&quot;"><summary><span class="qt">At what age do autism symptoms usually appear?</span></summary><div class="ansbox"><p>Before age 3</p></div></details>
+<details class="qa sapphire" data-kw="what are key nursing priorities with a patient who has asd? maintain routine
+prepare for transitions
+decrease environmental stimulation
+use short simple instructions
+reward desired behaviors
+avoid overwhelming sensory input &quot;&quot;"><summary><span class="qt">What are key nursing priorities with a patient who has ASD?</span></summary><div class="ansbox"><p>Maintain routine</p>
+<p>Prepare for transitions</p>
+<p>Decrease environmental stimulation</p>
+<p>Use short simple instructions</p>
+<p>Reward desired behaviors</p>
+<p>Avoid overwhelming sensory input</p></div></details>
+<details class="qa sapphire" data-kw="what is the priority for a child with autism? maintain routine &quot;&quot;"><summary><span class="qt">What is the priority for a child with Autism?</span></summary><div class="ansbox"><p>Maintain routine</p></div></details>
+<details class="qa sapphire" data-kw="what are the best communication approaches to pts with asd? short, concrete, simple directions
+give one instruction at a time. &quot;&quot;"><summary><span class="qt">What are the best communication approaches to PTs with ASD?</span></summary><div class="ansbox"><p>Short, Concrete, Simple directions</p>
+<p>Give one instruction at a time.</p></div></details>
+<details class="qa sapphire" data-kw="what medications can be used to treat asd? no meds treat autism itself; treat associated symptoms
+risperidone or aripiprazole for aggression/self injury. &quot;&quot;"><summary><span class="qt">What medications can be used to treat ASD?</span></summary><div class="ansbox"><p>No meds treat autism itself; treat associated symptoms</p>
+<p>risperidone or aripiprazole for aggression/self injury.</p></div></details>
+<details class="qa sapphire" data-kw="a four-year-old child is diagnosed with autism spectrum disorder. which intervention would be the most appropriate?
+a. encourage the child to engage in unstructured play with other children to develop social skills.
+b. implement a consistent routine and minimize changes to the child&#x27;s environment.
+c. introduce new activities regularly to help the child adapt to different situations.
+d. focus on teaching the child to communicate through verbal language only. b. implement a consistent routine and minimize changes to the child&#x27;s environment.
+with asd, they need that consistent routine and the minimizing of changes because that can cause a lot of emotional distress. &quot;&quot;"><summary><span class="qt">A four-year-old child is diagnosed with autism spectrum disorder. Which intervention would be the most appropriate?
+A. Encourage the child to engage in unstructured play with other children to develop social skills.
+B. Implement a consistent routine and minimize changes to the child&#x27;s environment.
+C. Introduce new activities regularly to help the child adapt to different situations.
+D. Focus on teaching the child to communicate through verbal language only.</span></summary><div class="ansbox"><p>B. Implement a consistent routine and minimize changes to the child&#x27;s environment.</p>
+<p>With ASD, they need that consistent routine and the minimizing of changes because that can cause a lot of emotional distress.</p></div></details>
+<details class="qa sapphire" data-kw="a nurse is assessing a 3-year-old during a well-child visit. which findings may indicate autism spectrum disorder? sata
+a. limited eye contact during interaction with the nurse.
+b. uses single words rather than sentences to communicate needs.
+c. displays repetitive hand flapping movements.
+d. engages in parallel play with other children.
+e. shows a strong attachment to a specific toy or object. a. limited eye contact during interaction with the nurse.
+b. uses single words rather than sentences to communicate needs.
+c. displays repetitive hand flapping movements.
+e. shows a strong attachment to a specific toy or object. &quot;&quot;"><summary><span class="qt">A nurse is assessing a 3-year-old during a well-child visit. Which findings may indicate autism spectrum disorder? SATA
+A. Limited eye contact during interaction with the nurse.
+B. Uses single words rather than sentences to communicate needs.
+C. Displays repetitive hand flapping movements.
+D. Engages in parallel play with other children.
+E. Shows a strong attachment to a specific toy or object.</span></summary><div class="ansbox"><p>A. Limited eye contact during interaction with the nurse.</p>
+<p>B. Uses single words rather than sentences to communicate needs.</p>
+<p>C. Displays repetitive hand flapping movements.</p>
+<p>E. Shows a strong attachment to a specific toy or object.</p></div></details>
+<details class="qa sapphire" data-kw="a nurse is educating parents of a newly diagnosed child with asd. which statement indicates a need for further teaching?
+a. we should establish a consistent daily routine to help reduce anxiety.
+b. we will avoid overwhelming our child with too many new activities at once.
+c. we should encourage eye contact by forcing our child to look at us when speaking.
+d. we will use simple and clear language when giving instructions. c. we should encourage eye contact by forcing our child to look at us when speaking. &quot;&quot;"><summary><span class="qt">A nurse is educating parents of a newly diagnosed child with ASD. Which statement indicates a need for further teaching?
+A. We should establish a consistent daily routine to help reduce anxiety.
+B. We will avoid overwhelming our child with too many new activities at once.
+C. We should encourage eye contact by forcing our child to look at us when speaking.
+D. We will use simple and clear language when giving instructions.</span></summary><div class="ansbox"><p>C. We should encourage eye contact by forcing our child to look at us when speaking.</p></div></details>
+<h2 class="sec" id="adhd">⚡ ADHD</h2>
+<details class="qa citrine" data-kw="a patient showing signs of inattention, hyperactivity, and impulsivity may be diagnosed with what disorder? adhd
+typical behaviors: blurting out answers, interrupting, losing homework, forgetfulness, poor organization, difficulty finishing tasks (like most nursing students about semester 4!!!)
+excess talking, cannot stay seated &quot;&quot;"><summary><span class="qt">A patient showing signs of Inattention, Hyperactivity, and Impulsivity may be diagnosed with what disorder?</span></summary><div class="ansbox"><p>ADHD</p>
+<p>Typical behaviors: blurting out answers, interrupting, losing homework, forgetfulness, poor organization, difficulty finishing tasks (like most nursing students about semester 4!!!)</p>
+<p>Excess talking, cannot stay seated</p></div></details>
+<details class="qa citrine" data-kw="what are first line meds for adhd? stimulants:
+methylphenidate (ritalin)
+dexmethylphenidate
+amphetamine salts (adderall)
+lisdexamfetamine (vyvanse)
+non-stims:
+atomoxetine - snri &quot;&quot;"><summary><span class="qt">What are first line meds for ADHD?</span></summary><div class="ansbox"><p>Stimulants:</p>
+<p>Methylphenidate (Ritalin)</p>
+<p>Dexmethylphenidate</p>
+<p>Amphetamine salts (Adderall)</p>
+<p>Lisdexamfetamine (Vyvanse)</p>
+<p>Non-Stims:</p>
+<p>Atomoxetine - SNRI</p></div></details>
+<details class="qa citrine" data-kw="what snri can be used to treat adhd? atomoxetine &quot;&quot;"><summary><span class="qt">What SNRI can be used to treat ADHD?</span></summary><div class="ansbox"><p>Atomoxetine</p></div></details>
+<details class="qa citrine" data-kw="t/f: atomoxetine is a stimulant used to treat adhd in kids? false, it is an snri used to treat adhd - not a stimulant. &quot;&quot;"><summary><span class="qt">T/F: Atomoxetine is a stimulant used to treat ADHD in kids?</span></summary><div class="ansbox"><p>False, it is an SNRI used to treat ADHD - NOT a stimulant.</p></div></details>
+<details class="qa citrine" data-kw="what class is methylphenidate? cns stimulant for adhd
+causes appetite suppression &quot;&quot;"><summary><span class="qt">What class is methylphenidate?</span></summary><div class="ansbox"><p>CNS stimulant for ADHD</p>
+<p>Causes appetite suppression</p></div></details>
+<details class="qa citrine" data-kw="what are the common side effects of adhd meds? loss of appetite (give to kids after a big breakfast)
+weight loss
+insomnia
+tachycardia
+elevated bp
+growth suppression (monitor) &quot;&quot;"><summary><span class="qt">What are the common side effects of ADHD meds?</span></summary><div class="ansbox"><p>Loss of appetite (give to kids AFTER a big breakfast)</p>
+<p>Weight loss</p>
+<p>Insomnia</p>
+<p>Tachycardia</p>
+<p>Elevated BP</p>
+<p>Growth suppression (monitor)</p></div></details>
+<details class="qa citrine" data-kw="what should nurses monitor when giving adhd meds? admin after breakfast
+height &amp; weight
+pulse
+blood pressure
+avoid evening doses. &quot;&quot;"><summary><span class="qt">What should nurses monitor when giving ADHD meds?</span></summary><div class="ansbox"><p>Admin after breakfast</p>
+<p>Height &amp; Weight</p>
+<p>Pulse</p>
+<p>Blood pressure</p>
+<p>Avoid evening doses.</p></div></details>
+<details class="qa citrine" data-kw="what education should be given to parents/patients? never stop medication suddenly without provider direction.
+store medication safely.
+watch for decreased appetite.
+encourage high-calorie evening meal. &quot;&quot;"><summary><span class="qt">What education should be given to parents/patients?</span></summary><div class="ansbox"><p>Never stop medication suddenly without provider direction.</p>
+<p>Store medication safely.</p>
+<p>Watch for decreased appetite.</p>
+<p>Encourage high-calorie evening meal.</p></div></details>
+<details class="qa citrine" data-kw="what is the priority for a child with adhd? safety &quot;&quot;"><summary><span class="qt">What is the priority for a child with ADHD?</span></summary><div class="ansbox"><p>Safety</p></div></details>
+<details class="qa citrine" data-kw="a school nurse assesses a 7-year-old referred for inattention and disruptive behavior. which findings are consistent with adhd?
+a. frequently interrupts others during conversations.
+b. easily distracted by external stimuli.
+c. prefers solitary activities and avoids social interactions.
+d. often fidgets or squirms in seat.
+e. completes tasks and assignments before moving on to another activity. a. frequently interrupts others during conversations.
+b. easily distracted by external stimuli.
+d. often fidgets or squirms in seat. &quot;&quot;"><summary><span class="qt">A school nurse assesses a 7-year-old referred for inattention and disruptive behavior. Which findings are consistent with ADHD?
+A. Frequently interrupts others during conversations.
+B. Easily distracted by external stimuli.
+C. Prefers solitary activities and avoids social interactions.
+D. Often fidgets or squirms in seat.
+E. Completes tasks and assignments before moving on to another activity.</span></summary><div class="ansbox"><p>A. Frequently interrupts others during conversations.</p>
+<p>B. Easily distracted by external stimuli.</p>
+<p>D. Often fidgets or squirms in seat.</p></div></details>
+<details class="qa citrine" data-kw="the nurse is educating parents of a child newly diagnosed with adhd. which statement indicates a need for further teaching? &quot;punishing our child for every instance of inattention will help improve focus.&quot;
+structure, positive reinforcement, and breaking tasks into smaller steps are the correct approaches. &quot;&quot;"><summary><span class="qt">The nurse is educating parents of a child newly diagnosed with ADHD. Which statement indicates a need for further teaching?</span></summary><div class="ansbox"><p>&quot;Punishing our child for every instance of inattention will help improve focus.&quot;</p>
+<p>Structure, positive reinforcement, and breaking tasks into smaller steps are the correct approaches.</p></div></details>
+<details class="qa citrine" data-kw="a nurse is educating parents of a child prescribed methylphenidate. which statement indicates a need for further teaching?
+a. we should give this medication in the morning to help with focus during school.
+b. we will monitor our child&#x27;s weight regularly while taking this medication.
+c. if our child has trouble sleeping, we can give the medication at bedtime.
+d. we should report any signs of increased heart rate or high blood pressure to the healthcare provider. c. if our child has trouble sleeping, we can give the medication at bedtime.
+this is a stimulant and will keep them awake. &quot;&quot;"><summary><span class="qt">A nurse is educating parents of a child prescribed methylphenidate. Which statement indicates a need for further teaching?
+A. We should give this medication in the morning to help with focus during school.
+B. We will monitor our child&#x27;s weight regularly while taking this medication.
+C. If our child has trouble sleeping, we can give the medication at bedtime.
+D. We should report any signs of increased heart rate or high blood pressure to the healthcare provider.</span></summary><div class="ansbox"><p>C. If our child has trouble sleeping, we can give the medication at bedtime.</p>
+<p>This is a stimulant and will keep them awake.</p></div></details>
+<h2 class="sec" id="tics-tourette-syndrome">😬 Tics &amp; Tourette syndrome</h2>
+<details class="qa teal" data-kw="a ______ is a sudden, rapid, reoccurring, non-rhythmic, stereotypical motor movement or vocalization. tic
+several motor and at least one vocal tic over a year = tourette syndrome &quot;&quot;"><summary><span class="qt">A ______ is a sudden, rapid, reoccurring, non-rhythmic, stereotypical motor movement or vocalization.</span></summary><div class="ansbox"><p>Tic</p>
+<p>Several motor and at least one vocal tic over a year = Tourette syndrome</p></div></details>
+<details class="qa teal" data-kw="what are three types of tic disorders? tourette syndrome
+motor tics
+vocal tics &quot;&quot;"><summary><span class="qt">What are three types of tic disorders?</span></summary><div class="ansbox"><p>Tourette syndrome</p>
+<p>Motor Tics</p>
+<p>Vocal tics</p></div></details>
+<details class="qa teal" data-kw="what are some examples of tics? blinking, head bobbing
+grimacing
+throat clearing
+grunting
+coprolalia (rare) &quot;&quot;"><summary><span class="qt">What are some examples of tics?</span></summary><div class="ansbox"><p>Blinking, head bobbing</p>
+<p>Grimacing</p>
+<p>Throat clearing</p>
+<p>Grunting</p>
+<p>Coprolalia (rare)</p></div></details>
+<details class="qa teal" data-kw="what are motor tics? these are sudden, repetitive movements.
+examples:
+excessive blinking
+eye rolling
+shoulder shrugging
+facial grimacing
+head jerking, neck twisting
+arm movements, jumping
+touching objects &quot;&quot;"><summary><span class="qt">What are motor tics?</span></summary><div class="ansbox"><p>These are sudden, repetitive movements.</p>
+<p>Examples:</p>
+<p>Excessive blinking</p>
+<p>Eye rolling</p>
+<p>Shoulder shrugging</p>
+<p>Facial grimacing</p>
+<p>Head jerking, Neck twisting</p>
+<p>Arm movements, Jumping</p>
+<p>Touching objects</p></div></details>
+<details class="qa teal" data-kw="what are vocal tics? examples:
+throat clearing ⭐
+grunting
+sniffing
+barking sounds
+coughing
+humming
+clicking noises
+less common:
+echolalia (repeating others&#x27; words)
+palilalia (repeating own words)
+coprolalia (swearing) &quot;&quot;"><summary><span class="qt">What are vocal tics?</span></summary><div class="ansbox"><p>Examples:</p>
+<p>Throat clearing ⭐</p>
+<p>Grunting</p>
+<p>Sniffing</p>
+<p>Barking sounds</p>
+<p>Coughing</p>
+<p>Humming</p>
+<p>Clicking noises</p>
+<p>Less common:</p>
+<p>Echolalia (repeating others&#x27; words)</p>
+<p>Palilalia (repeating own words)</p>
+<p>Coprolalia (swearing)</p></div></details>
+<details class="qa teal" data-kw="what is tourette&#x27;s syndrome? tourette syndrome is a neurodevelopmental disorder characterized by multiple motor tics and at least one vocal tic that persist for more than 1 year, with onset before age 18.
+begin before age 18
+last longer than 1 year
+wax and wane in frequency
+not be caused by medications or another medical condition &quot;&quot;"><summary><span class="qt">What is Tourette&#x27;s Syndrome?</span></summary><div class="ansbox"><p>Tourette syndrome is a neurodevelopmental disorder characterized by multiple motor tics and at least one vocal tic that persist for more than 1 year, with onset before age 18.</p>
+<p>Begin before age 18</p>
+<p>Last longer than 1 year</p>
+<p>Wax and wane in frequency</p>
+<p>Not be caused by medications or another medical condition</p></div></details>
+<details class="qa teal" data-kw="what meds can be used to help tic disorders? risperidone
+olanzapine &quot;&quot;"><summary><span class="qt">What meds can be used to help tic disorders?</span></summary><div class="ansbox"><p>Risperidone</p>
+<p>Olanzapine</p></div></details>
+<details class="qa teal" data-kw="medication used for tourette syndrome? risperidone &quot;&quot;"><summary><span class="qt">Medication used for Tourette syndrome?</span></summary><div class="ansbox"><p>Risperidone</p></div></details>
+<h2 class="sec" id="learning-communication-disorders">🗣️ Learning &amp; communication disorders</h2>
+<details class="qa emerald" data-kw="generally speaking, what are learning disorders? child has average intelligence
+but
+difficulty in: reading, writing, math
+early intervention improves outcomes. &quot;&quot;"><summary><span class="qt">Generally speaking, what are learning disorders?</span></summary><div class="ansbox"><p>Child has average intelligence</p>
+<p>BUT</p>
+<p>Difficulty in: Reading, Writing, Math</p>
+<p>Early intervention improves outcomes.</p></div></details>
+<details class="qa emerald" data-kw="what improves learning disabilities? early intervention improves outcomes. &quot;&quot;"><summary><span class="qt">What improves learning disabilities?</span></summary><div class="ansbox"><p>Early intervention improves outcomes.</p></div></details>
+<details class="qa emerald" data-kw="name four communication disorders language disorder
+speech sound disorder
+stuttering
+social communication disorder &quot;&quot;"><summary><span class="qt">Name four communication disorders</span></summary><div class="ansbox"><p>Language disorder</p>
+<p>Speech sound disorder</p>
+<p>Stuttering</p>
+<p>Social communication disorder</p></div></details>
+<details class="qa emerald" data-kw="what is a language disorder? difficulty understanding and/or using language that is below what is expected for the child&#x27;s age.
+the child has trouble with:
+vocabulary
+sentence structure
+conversation
+following directions
+the problem is with language itself—not speech.
+** these kids are not intellectually disabled nor do they have hearing loss &quot;&quot;"><summary><span class="qt">What is a language disorder?</span></summary><div class="ansbox"><p>Difficulty understanding and/or using language that is below what is expected for the child&#x27;s age.</p>
+<p>The child has trouble with:</p>
+<p>Vocabulary</p>
+<p>Sentence structure</p>
+<p>Conversation</p>
+<p>Following directions</p>
+<p>The problem is with language itself—not speech.</p>
+<p>** These kids are not intellectually disabled nor do they have hearing loss</p></div></details>
+<details class="qa emerald" data-kw="what is speech sound disorder? the child knows what they want to say, but cannot correctly produce speech sounds.
+think: pronunciation problem
+rabbit = wabbit
+manifestations:
+- omits sounds
+- substitutes sounds
+- distorts sounds
+- difficult to understand &quot;&quot;"><summary><span class="qt">What is speech sound disorder?</span></summary><div class="ansbox"><p>The child knows what they want to say, but cannot correctly produce speech sounds.</p>
+<p>Think: Pronunciation problem</p>
+<p>Rabbit = Wabbit</p>
+<p>Manifestations:</p>
+<ul><li>Omits sounds</li><li>Substitutes sounds</li><li>Distorts sounds</li><li>Difficult to understand</li></ul></div></details>
+<details class="qa emerald" data-kw="what is childhood-onset fluency disorder? stuttering = disruption in the flow of speech.
+long pauses
+difficulty getting words out
+visible frustration
+eye blinking
+facial tension
+foot tapping &quot;&quot;"><summary><span class="qt">What is Childhood-Onset fluency disorder?</span></summary><div class="ansbox"><p>Stuttering = Disruption in the flow of speech.</p>
+<p>Long pauses</p>
+<p>Difficulty getting words out</p>
+<p>Visible frustration</p>
+<p>Eye blinking</p>
+<p>Facial tension</p>
+<p>Foot tapping</p></div></details>
+<details class="qa emerald" data-kw="what makes stuttering worse? stress
+excitement
+fatigue
+speaking in public
+talking on the phone &quot;&quot;"><summary><span class="qt">What makes stuttering worse?</span></summary><div class="ansbox"><p>Stress</p>
+<p>Excitement</p>
+<p>Fatigue</p>
+<p>Speaking in public</p>
+<p>Talking on the phone</p></div></details>
+<details class="qa emerald" data-kw="what are nursing interventions and education for a patient who stutters? never say &quot;slow down.&quot; or &quot;take a deep breath.&quot;
+instead:
+✔ maintain eye contact.
+✔ listen patiently.
+✔ do not interrupt.
+✔ let the child finish.
+✔ model slow speech.
+parents should never finish the child&#x27;s sentences. &quot;&quot;"><summary><span class="qt">What are nursing interventions and education for a patient who stutters?</span></summary><div class="ansbox"><p>Never say &quot;Slow down.&quot; or &quot;Take a deep breath.&quot;</p>
+<p>Instead:</p>
+<ul><li>Maintain eye contact.</li><li>Listen patiently.</li><li>Do not interrupt.</li><li>Let the child finish.</li><li>Model slow speech.</li></ul>
+<p>Parents should never finish the child&#x27;s sentences.</p></div></details>
+<details class="qa emerald" data-kw="what is social communication disorder? difficulty using language appropriately in social situations.
+the child understands language. the child can speak.
+but they don&#x27;t understand:
+- conversation rules
+- jokes
+- sarcasm, innuendo, figurative language
+- taking turns
+- changing communication for different situations
+(can be confused with autism) &quot;&quot;"><summary><span class="qt">What is Social Communication Disorder?</span></summary><div class="ansbox"><p>Difficulty using language appropriately in social situations.</p>
+<p>The child understands language. The child can speak.</p>
+<p>But they don&#x27;t understand:</p>
+<ul><li>conversation rules</li><li>jokes</li><li>sarcasm, innuendo, figurative language</li><li>taking turns</li><li>changing communication for different situations</li></ul>
+<p>(Can be confused with autism)</p></div></details>
+<details class="qa emerald" data-kw="what are key differences between autism and social communication disorder? scd does not include repetitive behaviors. scd patients typically don&#x27;t have the sensory issues found with autism. &quot;&quot;"><summary><span class="qt">What are key differences between autism and Social Communication Disorder?</span></summary><div class="ansbox"><p>SCD does NOT include repetitive behaviors. SCD patients typically don&#x27;t have the sensory issues found with autism.</p></div></details>
+<details class="qa emerald" data-kw="difficulty understanding and expressing language (words and sentences) is what disorder? language d/o &quot;&quot;"><summary><span class="qt">Difficulty understanding and expressing language (words and sentences) is what disorder?</span></summary><div class="ansbox"><p>Language D/O</p></div></details>
+<details class="qa emerald" data-kw="difficulty pronouncing sounds despite understanding language is what disorder? speech sound d/o &quot;&quot;"><summary><span class="qt">Difficulty pronouncing sounds despite understanding language is what disorder?</span></summary><div class="ansbox"><p>Speech Sound D/O</p></div></details>
+<details class="qa emerald" data-kw="disrupted speech fluency with repetitions, prolongations, or blocks; don&#x27;t interrupt or finish sentences is what disorder? stuttering &quot;&quot;"><summary><span class="qt">Disrupted speech fluency with repetitions, prolongations, or blocks; don&#x27;t interrupt or finish sentences is what disorder?</span></summary><div class="ansbox"><p>Stuttering</p></div></details>
+<details class="qa emerald" data-kw="what is the difficulty with the social use of language (conversation, humor, figurative language) without the restricted or repetitive behaviors seen in autism? social communication d/o &quot;&quot;"><summary><span class="qt">What is the difficulty with the social use of language (conversation, humor, figurative language) without the restricted or repetitive behaviors seen in autism?</span></summary><div class="ansbox"><p>Social Communication D/O</p></div></details>
+<details class="qa emerald" data-kw="what is expected when a pt has developmental coordination d/o? difficulty with writing, buttoning, sports, and balance. &quot;&quot;"><summary><span class="qt">What is expected when a PT has Developmental Coordination D/O?</span></summary><div class="ansbox"><p>Difficulty with writing, buttoning, sports, and balance.</p></div></details>
+<details class="qa emerald" data-kw="continuous, involuntary urination after age 5 may be what disorder? enuresis (bed wetting) &quot;&quot;"><summary><span class="qt">Continuous, involuntary urination after age 5 may be what disorder?</span></summary><div class="ansbox"><p>Enuresis (Bed wetting)</p></div></details>
+<details class="qa emerald" data-kw="passing stool outside of a toilet after age 4 could be what disorder? encopresis
+often associated with constipation &quot;&quot;"><summary><span class="qt">Passing stool outside of a toilet after age 4 could be what disorder?</span></summary><div class="ansbox"><p>Encopresis</p>
+<p>Often associated with constipation</p></div></details>
+<h2 class="sec" id="disruptive-behavior-disorders">💢 Disruptive behavior disorders</h2>
+<details class="qa ruby" data-kw="how are disruptive behavior disorders characterized? these disorders are characterized by persistent patterns of behavior that involve anger, hostility, and/or aggression towards both other people and towards other people&#x27;s property.
+these disorders include odd (oppositional defiant disorder), conduct disorder, and intermittent explosive disorder. also kleptomania (thieving), pyromania (fire obsession) &quot;&quot;"><summary><span class="qt">How are Disruptive Behavior disorders characterized?</span></summary><div class="ansbox"><p>These disorders are characterized by persistent patterns of behavior that involve anger, hostility, and/or aggression towards both other people and towards other people&#x27;s property.</p>
+<p>These disorders include ODD (oppositional defiant disorder), conduct disorder, and intermittent explosive disorder. Also kleptomania (thieving), pyromania (fire obsession)</p></div></details>
+<details class="qa ruby" data-kw="t/f many of the symptoms and behaviors seen in odd are also seen in conduct disorder as well? true
+lower self-concept, lack of confidence in social situations. they don&#x27;t do well in social situations, with other kids, peers, or adults either. they become very awkward in social settings; social interactions are difficult.
+limited ability to make associations between their behavior and the consequences of their behavior, so they have difficulty understanding cause and effect. &quot;&quot;"><summary><span class="qt">T/F Many of the symptoms and behaviors seen in ODD are also seen in Conduct Disorder as well?</span></summary><div class="ansbox"><p>True</p>
+<p>Lower self-concept, lack of confidence in social situations. They don&#x27;t do well in social situations, with other kids, peers, or adults either. They become very awkward in social settings; social interactions are difficult.</p>
+<p>Limited ability to make associations between their behavior and the consequences of their behavior, so they have difficulty understanding cause and effect.</p></div></details>
+<details class="qa ruby" data-kw="what disorder is related to a reduced sensitivity to reward and punishment? oppositional defiant disorder
+not motivated by reward or punishment
+also: impaired problem-solving abilities, deficiencies in their ability to pay attention, deficiencies in their flexibility of thinking, and poor decision-making. &quot;&quot;"><summary><span class="qt">What disorder is related to a reduced sensitivity to reward and punishment?</span></summary><div class="ansbox"><p>Oppositional Defiant Disorder</p>
+<p>Not motivated by reward or punishment</p>
+<p>Also: impaired problem-solving abilities, deficiencies in their ability to pay attention, deficiencies in their flexibility of thinking, and poor decision-making.</p></div></details>
+<details class="qa ruby" data-kw="t/f medication is a key treatment route for kids with odd? false, meds generally are not a tx option for odd. if they have adhd and that is treated, it can help odd.
+use role modeling - therapeutic interventions and role modeling, rewarding good behavior, demonstrating the types of behaviors and responses that we want to see. &quot;&quot;"><summary><span class="qt">T/F Medication is a key treatment route for kids with ODD?</span></summary><div class="ansbox"><p>False, meds generally are not a TX option for ODD. If they have ADHD and that is treated, it can help ODD.</p>
+<p>Use role modeling - therapeutic interventions and role modeling, rewarding good behavior, demonstrating the types of behaviors and responses that we want to see.</p></div></details>
+<details class="qa ruby" data-kw="what is the association b/w odd and conduct disorder? conduct disorder can develop from untreated or unsuccessfully treated odd. &quot;&quot;"><summary><span class="qt">What is the association b/w ODD and Conduct disorder?</span></summary><div class="ansbox"><p>Conduct disorder can develop from untreated or unsuccessfully treated ODD.</p></div></details>
+<details class="qa ruby" data-kw="what is conduct disorder? persistent behaviors that violate society&#x27;s norms, rules and laws and the rights of others. these kids have significantly impaired abilities to function in social, academic, and occupational areas.
+- exhibit callous and unemotional traits, similar to those seen in adults with antisocial personality disorder.
+- conduct disorder is the pediatric or adolescent version of antisocial personality disorder. &quot;&quot;"><summary><span class="qt">What is Conduct Disorder?</span></summary><div class="ansbox"><p>Persistent behaviors that violate society&#x27;s norms, rules and laws and the rights of others. These kids have significantly impaired abilities to function in social, academic, and occupational areas.</p>
+<ul><li>Exhibit callous and unemotional traits, similar to those seen in adults with antisocial personality disorder.</li><li>Conduct disorder is the pediatric or adolescent version of antisocial personality disorder.</li></ul></div></details>
+<details class="qa ruby" data-kw="what are the four cluster areas for conduct disorder? - aggression towards people and animals - red flag
+- destruction of property
+- serious violation of rules
+- deceitfulness (theft) &quot;&quot;"><summary><span class="qt">What are the four cluster areas for Conduct Disorder?</span></summary><div class="ansbox"><ul><li>Aggression towards people and animals - RED FLAG</li><li>Destruction of property</li><li>Serious violation of rules</li><li>Deceitfulness (theft)</li></ul></div></details>
+<details class="qa ruby" data-kw="why do most kids with conduct disorder grow up to become adults with antisocial personality disorders? it is extremely difficult to treat… treatment is very unsuccessful. start young!
+treat odd before it becomes cd &quot;&quot;"><summary><span class="qt">Why do most kids with conduct disorder grow up to become adults with antisocial personality disorders?</span></summary><div class="ansbox"><p>It is extremely difficult to treat… treatment is very unsuccessful. Start young!</p>
+<p>Treat ODD before it becomes CD</p></div></details>
+<details class="qa ruby" data-kw="what are nursing interventions with conduct d/o? - limit setting, consistency, calling them out on their behaviors in the moment.
+- time out - take breaks when out of control.
+- behavioral contracts (older approach, pt agrees they won&#x27;t do x anymore - just words)
+- routine, consistency &quot;&quot;"><summary><span class="qt">What are nursing interventions with Conduct D/O?</span></summary><div class="ansbox"><ul><li>Limit setting, consistency, calling them out on their behaviors in the moment.</li><li>Time Out - take breaks when out of control.</li><li>Behavioral Contracts (older approach, PT agrees they won&#x27;t do X anymore - just words)</li><li>Routine, consistency</li></ul></div></details>
+<details class="qa ruby" data-kw="a child diagnosed with conduct disorder is spiteful, vindictive, and argumentative, and has a history of aggression towards others. which client problem identified by the nurse would take priority?
+1. impaired social interaction, refusal to adhere to conventional social behavior.
+2. defensive coping in unsatisfactory child-parent relationships.
+3. violence risk directed at others and poor impulse control.
+4. non-adherence and negative attitude. 3. violence risk directed at others and poor impulse control
+safety first &quot;&quot;"><summary><span class="qt">A child diagnosed with conduct disorder is spiteful, vindictive, and argumentative, and has a history of aggression towards others. Which client problem identified by the nurse would take priority?
+1. Impaired social interaction, refusal to adhere to conventional social behavior.
+2. Defensive coping in unsatisfactory child-parent relationships.
+3. Violence risk directed at others and poor impulse control.
+4. Non-adherence and negative attitude.</span></summary><div class="ansbox"><ul><li>Violence risk directed at others and poor impulse control</li></ul>
+<p>Safety first</p></div></details>
+<details class="qa ruby" data-kw="a child diagnosed with odd began yelling at staff members when asked to leave group therapy because of inappropriate language. which nursing intervention would be most appropriate?
+1. administer prn medication to decrease acting out behaviors.
+2. accompany the child to a quiet area to decrease external stimuli.
+3. institute seclusion following agency protocol.
+4. allow the child to stay in group therapy to monitor the situation further. 2. accompany the child to a quiet area to decrease external stimuli.
+we don&#x27;t want to jump to medication first, and we don&#x27;t want to jump to seclusion first. we want to try other things, but we do want the child to be able to be removed from the group so that it doesn&#x27;t disturb the group. &quot;&quot;"><summary><span class="qt">A child diagnosed with ODD began yelling at staff members when asked to leave group therapy because of inappropriate language. Which nursing intervention would be most appropriate?
+1. Administer PRN medication to decrease acting out behaviors.
+2. Accompany the child to a quiet area to decrease external stimuli.
+3. Institute seclusion following agency protocol.
+4. Allow the child to stay in group therapy to monitor the situation further.</span></summary><div class="ansbox"><ul><li>Accompany the child to a quiet area to decrease external stimuli.</li></ul>
+<p>We don&#x27;t want to jump to medication first, and we don&#x27;t want to jump to seclusion first. We want to try other things, but we do want the child to be able to be removed from the group so that it doesn&#x27;t disturb the group.</p></div></details>
+<details class="qa ruby" data-kw="a client diagnosed with odd has an outcome of learning new coping skills through behavior modification. which client statement indicates that behavior modification has occurred? &quot;i didn&#x27;t hit johnny, can i have my tootsie roll?&quot; &quot;&quot;"><summary><span class="qt">A client diagnosed with ODD has an outcome of learning new coping skills through behavior modification. Which client statement indicates that behavior modification has occurred?</span></summary><div class="ansbox"><p>&quot;I didn&#x27;t hit Johnny, can I have my Tootsie roll?&quot;</p></div></details>
+<details class="qa ruby" data-kw="when admitting a child diagnosed with conduct disorder, which symptoms would the nurse expect to assess?
+1. excessive distress about separation from home and family
+2. complaints of physical symptoms such as headaches and stomach aches.
+3. history of cruelty toward people and animals
+4. confabulation when confronted with wrongdoing. 3. history of cruelty toward people and animals &quot;&quot;"><summary><span class="qt">When admitting a child diagnosed with conduct disorder, which symptoms would the nurse expect to assess?
+1. Excessive distress about separation from home and family
+2. Complaints of physical symptoms such as headaches and stomach aches.
+3. History of cruelty toward people and animals
+4. Confabulation when confronted with wrongdoing.</span></summary><div class="ansbox"><ul><li>History of cruelty toward people and animals</li></ul></div></details>
+<h2 class="sec" id="delirium-dementia">🧠 Delirium &amp; dementia</h2>
+<details class="qa garnet" data-kw="what is it called when there is a disruption or an impairment in higher-level functions in our cognitive abilities? these include our ability to reason, our judgment, perception, our ability to pay attention. cognitive disorder &quot;&quot;"><summary><span class="qt">What is it called when there is a disruption or an impairment in higher-level functions in our cognitive abilities? These include our ability to reason, our judgment, perception, our ability to pay attention.</span></summary><div class="ansbox"><p>Cognitive disorder</p></div></details>
+<details class="qa garnet" data-kw="what cognitive disorder develops quickly, is common in older patients, and almost always is caused by a secondary cause? delirium
+ex: elderly patient with uti = delirium
+treat underlying cause, keep them safe
+almost always transient - goes away.
+generally don&#x27;t give them a med for the delirium, we medicate underlying cause. &quot;&quot;"><summary><span class="qt">What cognitive disorder develops quickly, is common in older patients, and almost always is caused by a secondary cause?</span></summary><div class="ansbox"><p>Delirium</p>
+<p>Ex: Elderly patient with UTI = delirium</p>
+<p>Treat underlying cause, keep them safe</p>
+<p>Almost always transient - goes away.</p>
+<p>Generally don&#x27;t give them a med for the delirium, we medicate underlying cause.</p></div></details>
+<details class="qa garnet" data-kw="what can dementia progress to? starts with forgetfulness, progresses to the 3 a&#x27;s:
+aphasia - impairment in language function
+apraxia - impairment of motor functions, despite motor abilities intact
+agnosia - can&#x27;t recognize or name objects despite intact sensory abilities
+moves to disturbances in executive functioning (thinking):
+- deficits around planning, initiating new things, sequencing, doing things in order, monitoring, and then they lose the ability to perform complex behaviors.
+- eventually, they get to the point where they cannot take care of themselves. &quot;&quot;"><summary><span class="qt">What can dementia progress to?</span></summary><div class="ansbox"><p>Starts with forgetfulness, progresses to the 3 A&#x27;s:</p>
+<p>Aphasia - impairment in language function</p>
+<p>Apraxia - impairment of motor functions, despite motor abilities intact</p>
+<p>Agnosia - can&#x27;t recognize or name objects despite intact sensory abilities</p>
+<p>Moves to disturbances in executive functioning (thinking):</p>
+<ul><li>deficits around planning, initiating new things, sequencing, doing things in order, monitoring, and then they lose the ability to perform complex behaviors.</li><li>Eventually, they get to the point where they cannot take care of themselves.</li></ul></div></details>
+<details class="qa garnet" data-kw="t/f dementia is always progressive? true
+three stages: mild (forgetfulness, loss of words, lost objects, anxiety/shame/fear), moderate (confusion is apparent, memory loss), severe (can&#x27;t do adls, personality changes) &quot;&quot;"><summary><span class="qt">T/F Dementia is ALWAYS progressive?</span></summary><div class="ansbox"><p>True</p>
+<p>Three stages: Mild (forgetfulness, loss of words, lost objects, anxiety/shame/fear), moderate (confusion is apparent, memory loss), severe (can&#x27;t do ADLs, personality changes)</p></div></details>
+<details class="qa garnet" data-kw="what is confabulation and when do you see it? when a person will make up a story or a lie, because they don&#x27;t know the answer to a question, but they know that they should.
+mild or moderate dementia. &quot;&quot;"><summary><span class="qt">What is confabulation and when do you see it?</span></summary><div class="ansbox"><p>When a person will make up a story or a lie, because they don&#x27;t know the answer to a question, but they know that they should.</p>
+<p>Mild or moderate dementia.</p></div></details>
+<details class="qa garnet" data-kw="what medications can help slow the progression of dementia? cholinesterase inhibitors slow progression: donepezil, rivastigmine, galantamine - ssx: drowsy, dizzy
+antipsychotics control symptoms: haloperidol, olanzapine, risperidone, quetiapine
+memantine - nmda receptor antagonist - ssx: htn, pain, h/a, vomiting, constipation, fatigue. &quot;&quot;"><summary><span class="qt">What medications can help slow the progression of dementia?</span></summary><div class="ansbox"><p>Cholinesterase inhibitors slow progression: Donepezil, rivastigmine, galantamine - SSX: drowsy, dizzy</p>
+<p>Antipsychotics control symptoms: haloperidol, olanzapine, risperidone, quetiapine</p>
+<p>Memantine - NMDA receptor antagonist - SSX: HTN, pain, H/A, vomiting, constipation, fatigue.</p></div></details>
+<details class="qa garnet" data-kw="a nurse suspects a client has experienced delirium. which specific assessment information would support this suspicion?
+1. a decreased level of consciousness with intermittent hypervigilance.
+2. slow onset of confusion and agitation.
+3. onset is insidious and relentless.
+4. the symptoms last for 1 month or longer. 1. a decreased level of consciousness with intermittent hypervigilance.
+2, 3 and 4 are dementia, not delirium &quot;&quot;"><summary><span class="qt">A nurse suspects a client has experienced delirium. Which specific assessment information would support this suspicion?
+1. A decreased level of consciousness with intermittent hypervigilance.
+2. Slow onset of confusion and agitation.
+3. Onset is insidious and relentless.
+4. The symptoms last for 1 month or longer.</span></summary><div class="ansbox"><ul><li>A decreased level of consciousness with intermittent hypervigilance.</li></ul>
+<p>2, 3 and 4 are dementia, not delirium</p></div></details>
+<details class="qa garnet" data-kw="a client who is delirious yells out to the nurse, &quot;you are an idiot, get me your supervisor.&quot; which is the best nursing response?
+1. you need to calm down and listen to what i&#x27;m saying.
+2. you&#x27;re very upset, i&#x27;ll call my supervisor.
+3. you&#x27;re going through a difficult time, i&#x27;ll stay with you.
+4. why do you feel that my calling the supervisor will solve anything? 3. you&#x27;re going through a difficult time, i&#x27;ll stay with you.
+under normal circumstances, you&#x27;d get the supervisor, but since they are delirious, it&#x27;s better to stay with them and help settle them down. &quot;&quot;"><summary><span class="qt">A client who is delirious yells out to the nurse, &quot;you are an idiot, get me your supervisor.&quot; Which is the best nursing response?
+1. You need to calm down and listen to what I&#x27;m saying.
+2. You&#x27;re very upset, I&#x27;ll call my supervisor.
+3. You&#x27;re going through a difficult time, I&#x27;ll stay with you.
+4. Why do you feel that my calling the supervisor will solve anything?</span></summary><div class="ansbox"><ul><li>You&#x27;re going through a difficult time, I&#x27;ll stay with you.</li></ul>
+<p>Under normal circumstances, you&#x27;d get the supervisor, but since they are delirious, it&#x27;s better to stay with them and help settle them down.</p></div></details>
+<details class="qa garnet" data-kw="a nursing student is studying delirium. which student statements indicate that learning has occurred? sata
+1. the symptoms of delirium develop over a short time.
+2. delirium permanently affects the ability to learn new information.
+3. symptoms of delirium include development of aphasia, apraxia, and agnosia.
+4. delirium is a disturbance of consciousness.
+5. delirium is secondary to another condition. 1. the symptoms of delirium develop over a short time.
+4. delirium is a disturbance of consciousness.
+5. delirium is secondary to another condition. &quot;&quot;"><summary><span class="qt">A nursing student is studying delirium. Which student statements indicate that learning has occurred? SATA
+1. The symptoms of delirium develop over a short time.
+2. Delirium permanently affects the ability to learn new information.
+3. Symptoms of delirium include development of aphasia, apraxia, and agnosia.
+4. Delirium is a disturbance of consciousness.
+5. Delirium is secondary to another condition.</span></summary><div class="ansbox"><ul><li>The symptoms of delirium develop over a short time.</li><li>Delirium is a disturbance of consciousness.</li><li>Delirium is secondary to another condition.</li></ul></div></details>
+<div id="none">Nothing matched that. Try a shorter word &mdash; &ldquo;traction&rdquo;, &ldquo;gain&rdquo;, &ldquo;tic&rdquo;.</div>
+<div class="foot">These are your own questions and answers, kept word for word. Tap a question to check yourself, or use <b>Show all answers</b> to read it straight through.</div>
+</div>
+<script>
+(function(){
+  var all=[].slice.call(document.querySelectorAll('details.qa'));
+  var heads=[].slice.call(document.querySelectorAll('h2.sec'));
+  var q=document.getElementById('q'), cnt=document.getElementById('cnt'),
+      none=document.getElementById('none');
+  function apply(){
+    var t=(q.value||'').trim().toLowerCase(), n=0;
+    all.forEach(function(d){
+      var ok=!t||(d.dataset.kw||'').indexOf(t)>=0;
+      d.style.display=ok?'':'none'; if(ok){n++; if(t) d.open=true;}
+    });
+    heads.forEach(function(h){
+      var el=h.nextElementSibling, any=false;
+      while(el&&el.tagName!=='H2'){ if(el.classList&&el.classList.contains('qa')
+        &&el.style.display!=='none') any=true; el=el.nextElementSibling; }
+      h.style.display=any?'':'none';
+    });
+    cnt.textContent=n+' of '+all.length+' questions';
+    none.style.display=n?'none':'block';
+  }
+  q.addEventListener('input',apply); q.addEventListener('search',apply);
+  document.getElementById('openAll').addEventListener('click',function(){
+    all.forEach(function(d){d.open=true;});
+    this.classList.add('on'); document.getElementById('closeAll').classList.remove('on');
+  });
+  document.getElementById('closeAll').addEventListener('click',function(){
+    all.forEach(function(d){d.open=false;});
+    this.classList.add('on'); document.getElementById('openAll').classList.remove('on');
+  });
+  apply();
+})();
+</script>
+</body></html>
