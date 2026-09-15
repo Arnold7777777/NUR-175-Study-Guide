@@ -29,16 +29,16 @@
 
     /* Drawings that replaced removed third-party pictures. Same frame the
        images used, and they scale with the card rather than overflowing it. */
-    .drawnfig{margin:10px 0;max-width:660px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
-/* On a phone the plates sit several padded cards deep, which left them a 270px
-   column and scaled 14px type down to 10px. This pulls each figure out to the
-   full screen width whatever it is nested inside, so the drawing renders at its
-   own size. */
-@media(max-width:720px){.drawnfig{width:calc(100vw - 20px);margin-left:calc(50% - 50vw + 10px);margin-right:calc(50% - 50vw + 10px)}}
-/* The plates are drawn on a 340px canvas. Letting them shrink to fit a nested
-   card column scaled the type down to 8-10px on a phone, so they are never
-   scaled below their own width - they pan inside this box instead. */
-.drawnfig svg{width:100%;min-width:340px;height:auto;display:block;border-radius:12px;border:1px solid rgba(255,255,255,.18);box-shadow:0 8px 22px rgba(0,0,0,.45);background:#fbf9ff}
+    .drawnfig{margin:12px 0;max-width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+/* min-width:0 matters: as a grid or flex item the figure will not shrink below
+   its own content without it, so it overflows its column and an ancestor with
+   overflow:hidden clips the right-hand side clean off. */
+/* The plates are drawn on a 340px canvas. They are never scaled below that - type
+   that shrinks to 8px is unreadable - so a narrower column pans inside this box
+   instead. max-width:100% keeps the figure inside its column whatever it is nested
+   in, which a viewport-width breakout does not when the column is not centered. */
+.drawnfig svg{width:100%;min-width:340px;height:auto;display:block;border-radius:12px;
+  border:1px solid rgba(120,90,160,.35);box-shadow:0 8px 22px rgba(0,0,0,.35);background:#fbf9ff}
     
     </style>
 <style id="skimCSS">
