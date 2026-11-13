@@ -288,8 +288,8 @@ body.nav-open #side{transform:translateX(0)}
 #side .sclose:hover{background:rgba(255,255,255,.3)}
 @media print{#side,#navBg,#menuBtn{display:none !important}}
 </style>
-</head><body>
-<div id="navBtns"><button type="button" class="nbHub" title="ABSN Study Hub" onclick="hop('https://arnold7777777.github.io/ABSN-Study-Hub/index.html',false)">&#127968;<span class="nbLabel">ABSN Study Hub</span></button></div>
+<script src="../ABSN-Study-Hub/assets/quiz-study/duplicates.js"></script><script src="../ABSN-Study-Hub/assets/quiz-study/links.js"></script></head><body>
+<div id="navBtns"><a class="nbHub" title="ABSN Study Hub" href="https://arnold7777777.github.io/ABSN-Study-Hub/index.html" target="_blank" rel="noopener">&#127968;<span class="nbLabel">ABSN Study Hub</span></a></div>
 <div id="navBg"></div>
 <nav id="side" aria-label="Site menu" aria-hidden="true">
   <span class="sbrand">&#10024; Super Mega Quiz</span>
@@ -298,21 +298,21 @@ body.nav-open #side{transform:translateX(0)}
   <div class="shead">On this page</div>
   <div id="sideJumps"></div>
   <div class="shead">Courses</div>
-  <a class="nav" href="nur234.html">&#129328; NUR 234<span class="nsub">Maternal &amp; newborn</span></a>
-  <a class="nav" href="nur235.html">&#129681; NUR 235<span class="nsub">Nursing care of the child</span></a>
-  <a class="nav" href="nur258.html">&#129658; NUR 258<span class="nsub">Adult health II</span></a>
+  <a class="nav" href="nur234.html" target="_blank" rel="noopener">&#129328; NUR 234<span class="nsub">Maternal &amp; newborn</span></a>
+  <a class="nav" href="nur235.html" target="_blank" rel="noopener">&#129681; NUR 235<span class="nsub">Nursing care of the child</span></a>
+  <a class="nav" href="nur258.html" target="_blank" rel="noopener">&#129658; NUR 258<span class="nsub">Adult health II</span></a>
   <div class="shead">Quizzes</div>
-  <a class="nav" href="nur234-quiz.html">&#129504; NUR 234 Mega Quiz<span class="nsub"> questions</span></a>
-  <a class="nav" href="nur235-quiz.html">&#129504; NUR 235 Mega Quiz<span class="nsub"> questions</span></a>
-  <a class="nav" href="nur258-quiz.html">&#129504; NUR 258 Mega Quiz<span class="nsub"> questions</span></a>
-  <a class="nav" href="pharmacology-new.html">&#128138; Pharmacology<span class="nsub">Every drug question from all three courses</span></a>
+  <a class="nav" href="nur234-quiz.html" target="_blank" rel="noopener">&#129504; NUR 234 Mega Quiz<span class="nsub"> questions</span></a>
+  <a class="nav" href="nur235-quiz.html" target="_blank" rel="noopener">&#129504; NUR 235 Mega Quiz<span class="nsub"> questions</span></a>
+  <a class="nav" href="nur258-quiz.html" target="_blank" rel="noopener">&#129504; NUR 258 Mega Quiz<span class="nsub"> questions</span></a>
+  <a class="nav" href="pharmacology-new.html" target="_blank" rel="noopener">&#128138; Pharmacology<span class="nsub">Every drug question from all three courses</span></a>
   <div class="shead">Listen</div>
-  <a class="nav" href="nur234-podcasts.html">&#127911; NUR 234 Podcasts<span class="nsub">5 episodes</span></a>
-  <a class="nav" href="nur235-podcasts.html">&#127911; NUR 235 Podcasts<span class="nsub">1 full episode + shorts</span></a>
-  <a class="nav" href="nur258-podcasts.html">&#127911; NUR 258 Podcasts<span class="nsub">6 exam episodes + 15 lectures</span></a>
+  <a class="nav" href="nur234-podcasts.html" target="_blank" rel="noopener">&#127911; NUR 234 Podcasts<span class="nsub">5 episodes</span></a>
+  <a class="nav" href="nur235-podcasts.html" target="_blank" rel="noopener">&#127911; NUR 235 Podcasts<span class="nsub">1 full episode + shorts</span></a>
+  <a class="nav" href="nur258-podcasts.html" target="_blank" rel="noopener">&#127911; NUR 258 Podcasts<span class="nsub">6 exam episodes + 15 lectures</span></a>
   <div class="shead">Reference</div>
   <a class="nav" href="https://arnold7777777.github.io/drug-guide/" target="_blank" rel="noopener">&#128138; Drug Guide<span class="nsub">A card per drug &middot; 981 drugs</span></a>
-  <a class="nav" href="index.html">&#127968; ABSN Study Hub<span class="nsub">Everything, all courses</span></a>
+  <a class="nav" href="index.html" target="_blank" rel="noopener">&#127968; ABSN Study Hub<span class="nsub">Everything, all courses</span></a>
 </nav>
 <div class="wrap">
   <h1>&#129504; NUR 175 Mega Quiz</h1>
@@ -756,7 +756,7 @@ window.NGN = (function(){
     return a;
   }
 
-  function poolList(){ return BANK.filter(function(o){ return passes(o); }); }
+  function poolList(){ return window.quizStudy.unique(BANK.filter(function(o){ return passes(o); })); }
 
   function refresh(){
     pool=poolList().length;
@@ -804,7 +804,7 @@ window.NGN = (function(){
       document.getElementById('bar').innerHTML='';
       return;
     }
-    var o=list[idx], multi=(o.type==='sata'), st=state[idx];
+    var o=list[idx], multi=(o.type==='sata'), st=state[idx]; window.quizStudy.use(card,o);
 
     /* The NGN item types build their own card and grade themselves. They share one
        contract with this engine: render, then hand back {grade, state}. Everything
